@@ -71,3 +71,4 @@ export const BaseHKGroteskMediumText = styled(BaseHKGroteskText)`
 - Update tailwind macro with twin macro
 - Maintain .editorconfig
 - Maintain .eslintignore
+- Add engines config
