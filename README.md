@@ -69,3 +69,5 @@ export const BaseHKGroteskMediumText = styled(BaseHKGroteskText)`
 - Remove tailwind.js and maintain tailwind.config.js separately
 - Separate typescript and maintain it in a different branch - with tslint setup
 - Update tailwind macro with twin macro
+- Maintain .editorconfig
+- Maintain .eslintignore
