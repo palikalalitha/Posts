@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import SvgWrapper from '../../SvgWrapper'
 import SvgFile from './SvgFile'
 
-class Loader extends Component {
+class ReactLogo extends Component {
   render() {
     return <SvgWrapper renderComponent={SvgFile} {...this.props} />
   }
 }
 
-export default Loader
+export default ReactLogo

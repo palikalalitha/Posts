@@ -49,3 +49,23 @@ export const BaseHKGroteskMediumText = styled(BaseHKGroteskText)`
    font-weight: 500;
 `
 ```
+
+## This Repo is configured with
+
+- Tailwind setup
+- Emotion setup
+- Supports typescript with small configuration changes
+- Test cases setup
+- Mobx setup
+- Lintstaged and Prettier setup with precommit hook
+- Storybook setup
+- React router setup
+- Folder structure is optimised for small scale applications
+
+## To be included in next version
+
+- Eslint setup
+- Include in precommit hook - eslint
+- Remove tailwind.js and maintain tailwind.config.js separately
+- Separate typescript and maintain it in a different branch - with tslint setup
+- Update tailwind macro with twin macro

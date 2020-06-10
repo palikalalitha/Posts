@@ -1,7 +1,1 @@
-import CounterStore from './CounterStore'
-
-const counterStore = new CounterStore()
-
-export default {
-   counterStore
-}
+// All the stores will be initialised here
