@@ -9,7 +9,7 @@ import './index.css'
 function HomeRoute() {
   return (
     <div className='app'>
-      <header className='app-header'>
+      <header className='bg-indigo-900 app-header'>
         <ReactLogo className='app-logo' />
         <p>
           Edit <code>src/App.js</code> and save to reload.

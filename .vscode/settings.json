@@ -1,5 +1,59 @@
 {
   "npm-intellisense.importQuotes": "\"",
   "typescript.preferences.quoteStyle": "double",
-  "javascript.preferences.quoteStyle": "double"
+  "javascript.preferences.quoteStyle": "double",
+  "window.zoomLevel": 0,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnSave": true,
+  "editor.tabCompletion": "on",
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.tsx": "typescriptreact",
+    ".env.alpha": "dotenv",
+    ".env.beta": "dotenv",
+    ".env.gamma": "dotenv",
+    ".env.prod": "dotenv",
+    ".env.demo": "dotenv",
+    "*.json": "jsonc",
+    ".eslintrc": "jsonc"
+  },
+  "eslint.options": { "configFile": "./.eslintrc" },
+  "tslint.alwaysShowStatus": true,
+  "gitlens.keymap": "alternate",
+  "tslint.autoFixOnSave": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "git.confirmSync": false,
+  "prettier.printWidth": 80,
+  "prettier.disableLanguages": ["yaml"],
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "color": "white",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "green",
+      "overviewRulerColor": "grey"
+    },
+    {
+      "text": "HACK:",
+      "color": "white",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "red",
+      "isWholeLine": false
+    },
+    {
+      "text": "TODO:",
+      "color": "white",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "orange"
+      //other styling properties goes here ...
+    }
+  ],
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.panel.defaultLocation": "right",
+  "terminal.integrated.rendererType": "dom",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.alwaysShowStatus": true
 }
