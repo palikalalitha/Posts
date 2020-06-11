@@ -1,0 +1,16 @@
+[
+  { "id": 1, "title": "Learn HTML & CSS", "isCompleted": true },
+  {
+    "id": 2,
+    "title": "Learn Basic Javascript Concepts",
+    "isCompleted": true
+  },
+  { "id": 3, "title": "Learn ReactJs Basics", "isCompleted": true },
+  { "id": 4, "title": "Learn MobX Concepts", "isCompleted": true },
+  { "id": 5, "title": "Learn Network Calls", "isCompleted": false },
+  {
+    "id": 6,
+    "title": "Learn How to write Unit test cases",
+    "isCompleted": false
+  }
+]

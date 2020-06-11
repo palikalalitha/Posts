@@ -1,0 +1,30 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin-top: 100px;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.filter-btn {
+  width: 100px;
+}
+
+.selected-filter-btn {
+  width: 100px;
+  border: 2px solid blue;
+}

@@ -122,3 +122,13 @@ export const getFormattedError = apiError => {
   }
   return apiErrorResponse
 }
+
+export const getUserDisplayableErrorMessage = error => {
+  const defaultMessage = 'Something went wrong please try again'
+  try {
+    if (error && error.message) {
+      return JSON.parse(error).originalError.message
+    }
+  } catch (exception) {}
+  return defaultMessage
+}
