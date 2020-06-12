@@ -3,7 +3,7 @@ import { observer } from 'mobx-react'
 
 import TodoModel from '../../stores/models/Todo'
 
-import { TodoWrapper } from './styledComponents'
+import { TodoWrapper, TodoItem } from './styledComponents'
 
 type TodoProps = {
   todo: TodoModel
@@ -26,7 +26,7 @@ class Todo extends Component<TodoProps> {
           checked={isCompleted}
           onChange={this.onChangeCompletion}
         />
-        <p>{title}</p>
+        <TodoItem onClick={this.onChangeCompletion}>{title}</TodoItem>
       </TodoWrapper>
     )
   }

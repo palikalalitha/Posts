@@ -5,4 +5,9 @@ export const TodoWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   margin-bottom: 10px;
+  cursor: pointer;
+`
+
+export const TodoItem = styled.p`
+  margin-left: 10px;
 `
