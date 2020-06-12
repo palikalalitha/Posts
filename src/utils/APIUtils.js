@@ -1,6 +1,11 @@
 import getData from '@ib/api'
 
-import { apiMethods, statusCodes, resStatuses } from '../constants/APIConstants'
+import {
+  apiMethods,
+  statusCodes,
+  resStatuses,
+  apiErrorProblems
+} from '../constants/APIConstants'
 import { getAccessToken } from './StorageUtils'
 
 export const networkCallWithApisauce = async (
@@ -28,7 +33,7 @@ export const getFormattedErrorDescription = error => {
   return formattedError.description
 }
 
-export function isNetworkErrorOrTimedOutError(error): boolean {
+export function isNetworkErrorOrTimedOutError(error) {
   const apiError = JSON.parse(error)
   const { networkError, timeoutError } = apiErrorProblems
   return apiError.problem === networkError || apiError.problem === timeoutError
