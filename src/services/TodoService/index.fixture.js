@@ -6,6 +6,12 @@ class TodoFixtureService {
       resolve(getTodosResponse)
     })
   }
+
+  updateTodoCompletion() {
+    return new Promise(resolve => {
+      resolve({})
+    })
+  }
 }
 
 export default TodoFixtureService

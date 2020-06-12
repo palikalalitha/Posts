@@ -21,6 +21,15 @@ class TodoAPIService {
       apiMethods.get
     )
   }
+
+  async updateTodoCompletion(requestObject) {
+    return networkCallWithApisauce(
+      this.api,
+      endpoints.update_todo_completion_status,
+      requestObject,
+      apiMethods.post
+    )
+  }
 }
 
 export default TodoAPIService

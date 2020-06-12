@@ -35,7 +35,7 @@ class TodoStore {
   @action.bound
   setTodoListResponse(response) {
     this.todos = response.map(todo => {
-      return new Todo(todo)
+      return new Todo(todo, this.todoService)
     })
   }
 
