@@ -54,7 +54,7 @@ class TodoStore {
       title: todoInput,
       isCompleted: false
     }
-    const newTodo = new Todo(todoObject)
+    const newTodo = new Todo(todoObject, this.todoService)
     this.todos.unshift(newTodo)
   }
 
