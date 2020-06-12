@@ -1,0 +1,63 @@
+[
+  {
+    "id": "memoji-1",
+    "name": "Exploding Head",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-1.png"
+  },
+  {
+    "id": "memoji-2",
+    "name": "Grinning Face with Sweat",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-2.png"
+  },
+  {
+    "id": "memoji-3",
+    "name": "Smiling Face with Heart-Eyes",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-3.png"
+  },
+  {
+    "id": "memoji-4",
+    "name": "Smirking Face",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-4.png"
+  },
+  {
+    "id": "memoji-5",
+    "name": "Thinking Face",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-5.png"
+  },
+  {
+    "id": "memoji-6",
+    "name": "Winking Face",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-6.png",
+    "occupation": "Singer"
+  },
+  {
+    "id": "memoji-7",
+    "name": "Grinning Face",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-7.png"
+  },
+  {
+    "id": "memoji-8",
+    "name": "Crying Face",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-8.png"
+  },
+  {
+    "id": "memoji-9",
+    "name": "Astonished Face",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-9.png"
+  },
+  {
+    "id": "memoji-10",
+    "name": "Face with Tears of Joy",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-10.png"
+  },
+  {
+    "id": "memoji-11",
+    "name": "Star-Struck",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-11.png"
+  },
+  {
+    "id": "memoji-12",
+    "name": "Winking Face with Tongue",
+    "image": "https://tap.ibhubs.in/react/assignments/assignment-5/preview/images/memoji-12.png"
+  }
+]

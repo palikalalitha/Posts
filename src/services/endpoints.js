@@ -1,6 +1,11 @@
 const endpoints = {
-  todos: 'todos',
-  updateCompletion: 'update_todo_completion_status'
+  todos: {
+    todoList: 'todos',
+    updateCompletion: 'update/todo/completion_status'
+  },
+  emojis: {
+    emojiList: 'emojis'
+  }
 }
 
 export default endpoints
