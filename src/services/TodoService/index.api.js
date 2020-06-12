@@ -4,19 +4,22 @@ import { networkCallWithApisauce } from '../../utils/APIUtils'
 
 import { apiMethods } from '../../constants/APIConstants'
 import { TODO_BASE_URL } from '../../constants/EnvironmentConstants'
+
 import endpoints from '../endpoints'
 
 class TodoAPIService {
   api
 
   constructor() {
-    this.api = create({ baseURL: TODO_BASE_URL })
+    this.api = create({
+      baseURL: TODO_BASE_URL
+    })
   }
 
   async getTodos() {
     return networkCallWithApisauce(
       this.api,
-      endpoints.todos,
+      endpoints.todos.todoList,
       {},
       apiMethods.get
     )
@@ -25,7 +28,7 @@ class TodoAPIService {
   async updateTodoCompletion(requestObject) {
     return networkCallWithApisauce(
       this.api,
-      endpoints.update_todo_completion_status,
+      endpoints.todos.updateCompletion,
       requestObject,
       apiMethods.post
     )
