@@ -2,14 +2,14 @@
 import TodoService from '../services/TodoService/index.api'
 import EmojiService from '../services/EmojiService/index.fixture'
 
-import TodoStore from './TodoStore'
+import RemoteTodoStore from './RemoteTodoStore'
 import EmojiStore from './EmojiStore'
 
-const todoStore = new TodoStore(new TodoService())
+const remoteTodoStore = new RemoteTodoStore(new TodoService())
 const emojiStore = new EmojiStore(new EmojiService())
 
 const stores = {
-  todoStore,
+  remoteTodoStore,
   emojiStore
 }
 

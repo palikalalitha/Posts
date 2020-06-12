@@ -9,25 +9,27 @@ import TodoFooter from '../../components/RemoteTodos/TodoFooter'
 
 import { TodosWrapper } from './styledComponents'
 
-@inject('todoStore')
+@inject('remoteTodoStore')
 @observer
 class RemoteTodosRoute extends Component {
   componentDidMount() {
     this.getTodos()
   }
 
+  getTodoStore = () => {
+    return this.props.remoteTodoStore
+  }
+
   getTodos = () => {
-    const { todoStore } = this.props
-    todoStore.getTodoList()
+    this.getTodoStore().getTodoList()
   }
 
   onAddTodo = todoInput => {
-    const { todoStore } = this.props
-    todoStore.addNewTodo(todoInput)
+    this.getTodoStore().addNewTodo(todoInput)
   }
 
   renderSuccessUI = observer(() => {
-    const { todos, todosLeftCount } = this.props.todoStore
+    const { todos, todosLeftCount } = this.getTodoStore()
     return (
       <TodosWrapper>
         <UserInput onAddTodo={this.onAddTodo} />
@@ -38,7 +40,7 @@ class RemoteTodosRoute extends Component {
   })
 
   render() {
-    const { getTodoListAPIStatus, getTodoListAPIError } = this.props.todoStore
+    const { getTodoListAPIStatus, getTodoListAPIError } = this.getTodoStore()
     return (
       <LoadingWrapperWithFailure
         apiStatus={getTodoListAPIStatus}

@@ -2,7 +2,7 @@ import { observable, action, computed } from 'mobx'
 import { bindPromiseWithOnSuccess } from '@ib/mobx-promise'
 import { API_INITIAL } from '@ib/api-constants'
 
-import Todo from '../models/Todo'
+import RemoteTodoModel from '../models/RemoteTodoModel'
 
 class TodoStore {
   todoService
@@ -35,7 +35,7 @@ class TodoStore {
   @action.bound
   setTodoListResponse(response) {
     this.todos = response.map(todo => {
-      return new Todo(todo, this.todoService)
+      return new RemoteTodoModel(todo, this.todoService)
     })
   }
 
@@ -54,7 +54,7 @@ class TodoStore {
       title: todoInput,
       isCompleted: false
     }
-    const newTodo = new Todo(todoObject, this.todoService)
+    const newTodo = new RemoteTodoModel(todoObject, this.todoService)
     this.todos.unshift(newTodo)
   }
 

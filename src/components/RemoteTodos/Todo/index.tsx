@@ -3,10 +3,10 @@ import { reaction } from 'mobx'
 
 import { observer } from 'mobx-react'
 
-import TodoModel from '../../../stores/models/Todo'
+import TodoModel from '../../../stores/models/RemoteTodoModel'
 
 import { TodoWrapper, TodoItem } from './styledComponents'
-import { API_SUCCESS, API_FAILED } from '@ib/api-constants'
+import { API_FAILED } from '@ib/api-constants'
 import { getFormattedErrorDescription } from '../../../utils/APIUtils'
 
 type TodoProps = {
