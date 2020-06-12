@@ -2,7 +2,7 @@
   "npm-intellisense.importQuotes": "\"",
   "typescript.preferences.quoteStyle": "double",
   "javascript.preferences.quoteStyle": "double",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "editor.renderWhitespace": "all",
   "editor.formatOnSave": true,
   "editor.tabCompletion": "on",

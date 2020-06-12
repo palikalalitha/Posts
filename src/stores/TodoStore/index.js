@@ -1,4 +1,4 @@
-import { observable, action } from 'mobx'
+import { observable, action, computed } from 'mobx'
 import { bindPromiseWithOnSuccess } from '@ib/mobx-promise'
 import { API_INITIAL } from '@ib/api-constants'
 
@@ -45,6 +45,22 @@ class TodoStore {
     return bindPromiseWithOnSuccess(getTodosPromise)
       .to(this.setGetTodoListAPIStatus, this.setTodoListResponse)
       .catch(this.setGetTodoListAPIError)
+  }
+
+  @action.bound
+  addNewTodo(todoInput) {
+    const todoObject = {
+      id: Math.random.toString(),
+      title: todoInput,
+      isCompleted: false
+    }
+    const newTodo = new Todo(todoObject)
+    this.todos.unshift(newTodo)
+  }
+
+  @computed
+  get todosLeftCount() {
+    return this.todos.filter(todo => todo.isCompleted).length
   }
 }
 
