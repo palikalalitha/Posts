@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { observer } from 'mobx-react'
 
-import NoDataView from '../common/NoDataView'
+import NoDataView from '../../common/NoDataView'
 
 import Todo from '../Todo'
 

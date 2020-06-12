@@ -3,15 +3,15 @@ import { observer, inject } from 'mobx-react'
 
 import LoadingWrapperWithFailure from '../../components/common/LoadingWrapperWithFailure'
 
-import TodoList from '../../components/TodoList'
-import UserInput from '../../components/UserInput'
-import TodoFooter from '../../components/TodoFooter'
+import TodoList from '../../components/RemoteTodos/TodoList'
+import UserInput from '../../components/RemoteTodos/UserInput'
+import TodoFooter from '../../components/RemoteTodos/TodoFooter'
 
 import { TodosWrapper } from './styledComponents'
 
 @inject('todoStore')
 @observer
-class TodosApp extends Component {
+class RemoteTodosRoute extends Component {
   componentDidMount() {
     this.getTodos()
   }
@@ -50,4 +50,4 @@ class TodosApp extends Component {
   }
 }
 
-export default TodosApp
+export default RemoteTodosRoute
