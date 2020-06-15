@@ -4,14 +4,12 @@ import { Provider } from 'mobx-react'
 
 import HomeRoute from './routes/HomeRoute'
 import SampleRoute from './routes/SampleRoute'
-import RemoteTodosRoute from './routes/RemoteTodosRoute'
 
 import stores from './stores'
 
 import {
   HOME_ROUTE_PATH,
-  SAMPLE_ROUTE_PATH,
-  REMOTE_TODOS_ROUTE_PATH
+  SAMPLE_ROUTE_PATH
 } from './constants/NavigationConstants'
 
 const App = () => {
@@ -21,9 +19,6 @@ const App = () => {
         <Switch>
           <Route exact path={SAMPLE_ROUTE_PATH}>
             <SampleRoute />
-          </Route>
-          <Route exact path={REMOTE_TODOS_ROUTE_PATH}>
-            <RemoteTodosRoute />
           </Route>
           <Route path={HOME_ROUTE_PATH}>
             <HomeRoute />
