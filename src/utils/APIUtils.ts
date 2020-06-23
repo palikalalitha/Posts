@@ -14,7 +14,7 @@ export const networkCallWithApisauce = async (
   requestObject,
   type = apiMethods.post
 ) => {
-  let response = null
+  let response: any | null = null
   const accessToken = getAccessToken()
   if (accessToken) {
     api.setHeader('Authorization', `Bearer ${accessToken}`)
@@ -28,12 +28,12 @@ export const networkCallWithApisauce = async (
   return response
 }
 
-export const getFormattedErrorDescription = error => {
+export const getFormattedErrorDescription = (error): string => {
   const formattedError = getFormattedError(error)
   return formattedError.description
 }
 
-export function isNetworkErrorOrTimedOutError(error) {
+export function isNetworkErrorOrTimedOutError(error): boolean {
   const apiError = JSON.parse(error)
   const { networkError, timeoutError } = apiErrorProblems
   return apiError.problem === networkError || apiError.problem === timeoutError
