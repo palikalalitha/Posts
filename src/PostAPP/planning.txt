@@ -1,0 +1,30 @@
+POSTS APP
+
+PostModule
+    services
+        -PostService
+            -getPostsAPI function
+    stores
+        -PostsStore
+            -states
+                -list
+                -status varibales
+            -function   
+                -getPosts
+                - 
+    model
+        -PostModel
+            -varibales 
+                userId
+                id
+                title
+                body
+    routes
+        -PostRoute
+
+    components
+        -PostPage
+
+        
+
+
