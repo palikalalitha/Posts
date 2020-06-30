@@ -1,0 +1,15 @@
+{
+  "useCases": {
+    "normal": "Normal",
+    "plural": "Plural",
+    "parametrized": "Parametrized"
+  },
+  "todoTitle": "करने के लिए सूची",
+  "addTodo": "टोडो जोड़ें",
+  "addCurrentTodo": "वर्तमान टूडू जोड़ें",
+  "todosLeft": "टोडो लेफ्ट  ",
+  "todosLeft_plural": "टोडोस लेफ्ट",
+  "todosLeftParameter": "स्टिल {{गिनती}} टोडो लेफ्ट",
+  "todosLeftParameter_plural": "स्टिल {{गिनती}} टोडोस लेफ्ट",
+  "todoWithParameter": "Todo - {{todoText}}"
+}

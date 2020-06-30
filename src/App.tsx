@@ -17,10 +17,13 @@ import {
 const TodosRoute = lazy(() => import('./routes/TodosRoute'))
 
 import i18n from './i18n'
+import PostRoute from './PostAPP/route/PostRoute'
+import { POSTS_ROUTE_PATH } from './PostAPP/constants/NavigationConstants'
+//import TodosRoute from './routes/TodosRoute'
 
 const App = () => {
   return (
-    <Provider {...stores}>
+    <Provider {...stores} {...postStores}>
       <I18nextProvider i18n={i18n}>
         <Suspense fallback={<div />}>
           <Router basename={process.env.PUBLIC_URL}>
@@ -30,6 +33,9 @@ const App = () => {
               </Route>
               <Route exact path={TODOS_ROUTE_PATH}>
                 <TodosRoute />
+              </Route>
+              <Route exact path={POSTS_ROUTE_PATH}>
+                <PostRoute />
               </Route>
               <Route path={HOME_ROUTE_PATH}>
                 <HomeRoute />

@@ -1,0 +1,11 @@
+{
+  "useCases": {
+    "normal": "Normal",
+    "plural": "Plural",
+    "parametrized": "Parametrized"
+  },
+  "postTitle": "Posts list",
+  "addCurrentTodo": " Add current todo",
+  "totalPosts": "post",
+  "totalPosts_plural": "posts"
+}

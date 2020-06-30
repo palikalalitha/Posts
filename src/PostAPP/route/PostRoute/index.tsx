@@ -1,1 +1,2 @@
-export { PostRoute } from './PostRoute'
+import PostRoute from './PostRoute'
+export default PostRoute

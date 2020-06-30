@@ -27,7 +27,7 @@ i18n
     }
   )
 
-i18n.loadNamespaces(['common', 'todos'], err => {
+i18n.loadNamespaces(['common', 'todos', 'posts'], err => {
   if (err) {
     console.log('I18n loadNamespaces error', err)
   }

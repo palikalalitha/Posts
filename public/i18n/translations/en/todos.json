@@ -4,7 +4,9 @@
     "plural": "Plural",
     "parametrized": "Parametrized"
   },
+  "todoTitle": "Todo List",
   "addTodo": "Add Todo",
+  "addCurrentTodo": " Add current todo",
   "todosLeft": "Todo Left",
   "todosLeft_plural": "Todos Left",
   "todosLeftParameter": "Still {{count}} Todo Left",

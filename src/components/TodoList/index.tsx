@@ -16,12 +16,13 @@ import { TodosListWrapper } from './styledComponents'
 
 interface TodoListProps extends RouteComponentProps {
   todos: Array<TodoModel>
+  todoTitle: string
 }
 
 @observer
 class TodoList extends Component<TodoListProps> {
   render() {
-    const { todos } = this.props
+    const { todos, todoTitle } = this.props
 
     if (todos.length === 0) {
       return <NoDataView />
