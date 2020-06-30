@@ -6,7 +6,7 @@ import HomeRoute from './routes/HomeRoute'
 import SampleRoute from './routes/SampleRoute'
 
 import stores from './stores'
-
+//import { postStores } from "./PostAPP/stores/index"
 import {
   HOME_ROUTE_PATH,
   SAMPLE_ROUTE_PATH,
@@ -16,7 +16,7 @@ import TodosRoute from './routes/TodosRoute'
 
 const App = () => {
   return (
-    <Provider {...stores}>
+    <Provider {...stores} {...postStores}>
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path={SAMPLE_ROUTE_PATH}>

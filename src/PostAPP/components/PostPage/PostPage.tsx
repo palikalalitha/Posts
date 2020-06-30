@@ -15,7 +15,6 @@ class PostPage extends React.Component<PostPageProps> {
     render() {
         const { apiStatus, apiError, retryCall, renderSuccessUI } = this.props
         return (
-
             <LoadingWrapperWithFailure
                 apiStatus={apiStatus}
                 apiError={apiError}
