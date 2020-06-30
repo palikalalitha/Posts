@@ -1,5 +1,5 @@
-import { PostObject } from "../../stores/types";
+import { PostObject } from '../../stores/types'
 
 export interface PostService {
-    getPostsAPI: () => Promise<Array<PostObject>>
+  getPostsAPI: () => Promise<Array<PostObject>>
 }

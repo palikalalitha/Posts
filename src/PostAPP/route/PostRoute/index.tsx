@@ -1,1 +1,1 @@
-export { PostRoute } from "./PostRoute"
+export { PostRoute } from './PostRoute'

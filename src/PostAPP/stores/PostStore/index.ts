@@ -1,1 +1,1 @@
-export { PostStore } from "./PostStore"
+export { PostStore } from './PostStore'

@@ -1,11 +1,8 @@
-import { PostStore } from "./PostStore";
-import { PostAPIService } from "../services/PostService/index.api";
+import { PostStore } from './PostStore'
+import { PostAPIService } from '../services/PostService/index.api'
 
 const postStore = new PostStore(new PostAPIService())
-const postStores =
-{
-    postStore
+const postStores = {
+  postStore
 }
-export {
-    stores
-}
+export { stores }
