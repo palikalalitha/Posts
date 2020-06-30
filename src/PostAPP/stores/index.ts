@@ -5,4 +5,4 @@ const postStore = new PostStore(new PostAPIService())
 const postStores = {
   postStore
 }
-export { stores }
+export { postStores }
