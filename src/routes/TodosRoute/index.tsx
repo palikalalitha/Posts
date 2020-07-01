@@ -13,6 +13,7 @@ import TodoStore from '../../stores/TodoStore'
 
 import { TodosWrapper, RefDemoButton } from './styledComponents'
 import { API_SUCCESS } from '@ib/api-constants'
+import i18n from '../../i18n'
 
 interface TodosRouteProps extends RouteComponentProps, WithTranslation {}
 
@@ -60,7 +61,9 @@ class TodosRoute extends Component<TodosRouteProps> {
     const { history } = this.props
     history.push(SAMPLE_ROUTE_PATH)
   }
-  changeLang = () => {}
+  changeLanguage = e => {
+    i18n.changeLanguage(e.target.value)
+  }
 
   renderSuccessUI = observer(() => {
     const { t } = this.props
@@ -70,9 +73,11 @@ class TodosRoute extends Component<TodosRouteProps> {
         <RefDemoButton onClick={this.getCurrentTodo}>
           {t('todos:addCurrentTodo')}
         </RefDemoButton>
-        <RefDemoButton onClick={this.changeLang}>
-          Change Language to hindhi
-        </RefDemoButton>
+        <select onChange={this.changeLanguage}>
+          select language
+          <option value='en'>English</option>
+          <option value='hi'>Hindi</option>
+        </select>
         <UserInput
           ref={this.todoInputRef}
           onAddInput={this.onAddTodo}

@@ -1,0 +1,10 @@
+{
+  "useCases": {
+    "normal": "Normal",
+    "plural": "Plural",
+    "parametrized": "Parametrized"
+  },
+  "postTitle": "पोस्ट सूची",
+  "totalPosts": "पोस्ट",
+  "totalPosts_plural": "पोस्ट"
+}

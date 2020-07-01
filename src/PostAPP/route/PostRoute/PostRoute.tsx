@@ -24,14 +24,19 @@ class PostRoute extends React.Component<PostRouteProps> {
   doNetworkCalls = () => {
     this.getPostStore().getPostList()
   }
-  changeLanguage = lng => {
-    i18n.changeLanguage(lng)
+  changeLanguage = e => {
+    i18n.changeLanguage(e.target.value)
   }
   renderSuccessUI = observer(() => {
     const { t } = this.props
     const { postList } = this.getPostStore()
     return (
       <>
+        <select onChange={this.changeLanguage}>
+          select language
+          <option value='en'>English</option>
+          <option value='hi'>Hindi</option>
+        </select>
         <PostList
           postList={postList}
           postTitle={t('posts:postTitle')}
