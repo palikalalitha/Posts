@@ -19,6 +19,8 @@ const TodosRoute = lazy(() => import('./routes/TodosRoute'))
 import i18n from './i18n'
 import PostRoute from './PostAPP/route/PostRoute'
 import { POSTS_ROUTE_PATH } from './PostAPP/constants/NavigationConstants'
+import Practice from './Practice/components/RefPractice/Practice'
+import LazyImages from './Practice/components/LazyLoading/LazyImages'
 //import TodosRoute from './routes/TodosRoute'
 
 const App = () => {
@@ -28,18 +30,22 @@ const App = () => {
         <Suspense fallback={<div />}>
           <Router basename={process.env.PUBLIC_URL}>
             <Switch>
-              <Route exact path={SAMPLE_ROUTE_PATH}>
-                <SampleRoute />
+              <Route path='/practice'>
+                <Practice />
+                {/* <LazyImages /> */}
               </Route>
-              <Route exact path={TODOS_ROUTE_PATH}>
-                <TodosRoute />
-              </Route>
-              <Route exact path={POSTS_ROUTE_PATH}>
-                <PostRoute />
-              </Route>
-              <Route path={HOME_ROUTE_PATH}>
-                <HomeRoute />
-              </Route>
+              {/* <Route exact path={SAMPLE_ROUTE_PATH}>
+                  <SampleRoute />
+                </Route>
+                <Route exact path={TODOS_ROUTE_PATH}>
+                  <TodosRoute />
+                </Route>
+                <Route exact path={POSTS_ROUTE_PATH}>
+                  <PostRoute />
+                </Route>
+                <Route path={HOME_ROUTE_PATH}>
+                  <HomeRoute />
+                </Route> */}
             </Switch>
           </Router>
         </Suspense>
